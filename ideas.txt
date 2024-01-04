@@ -1,0 +1,16 @@
+Use Cases:
+Prediction Market,
+Incentivize Good Real World Deeds ( github bounties and volunteer work)
+CrowdSourced funding for governemnt lobbying
+A DAO THAT Can enact real world change, Imagine an apartnemtn complex paid for with crowsurced funds.
+Policy Changes, Food Security, Journalism, Human RIghts, Information security and privacy,
+Collaboration. 
+
+A governamen which operates across regions, Like a crowdsourced UBI (Universal Base Income). takes in taxes, distributes value, all transparently, democratically, meritocratically
+
+:::
+LEDGERBOARD = ID -> FUNDS 
+LEDGER = list of all TXS
+BLOCKCHAIN = list of all blocks nonces hashes etc.
+
+

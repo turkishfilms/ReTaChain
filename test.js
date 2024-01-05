@@ -5,15 +5,16 @@ const RetaChain = new Blockchain();
 
 
 
-RetaChain.createNewBlock('0x3423', '0x32423'); //establish a made up block
-
 
 //fill block with transactions from ledger
 for(let tx in ledgerBasic){
   RetaChain.createNewTransaction(ledgerBasic[tx].amount, ledgerBasic[tx].sender, ledgerBasic[tx].receiver);
 }
 
-//
-RetaChain.createNewBlock('0x4343', 'ox9843');
 
-console.log(RetaChain)
+
+
+//create the new block by running proof of work method until nonce is '0000'. once found, pending transactions submitted and cleared
+RetaChain.createNewBlock(RetaChain.proofOfWork('fdsfsdfsdfsdfsd', RetaChain.pendingTransactions), '0xff3f43dd', '0xjokfdsfsdf');
+
+console.log(RetaChain);

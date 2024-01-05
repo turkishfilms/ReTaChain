@@ -4,32 +4,46 @@
 
  * **/
 
-class Blockchain {
-  constructor() {
-    this.chain = [];
-    this.newTransactions = [];
+ export default class Blockchain {
+	constructor() {
+	  this.chain = [];
+	  this.pendingTransactions = [];
+	}
+  
+	createNewBlock(previousBlockHash, hash) {
+	  const newBlock = {
+		index: this.chain.length + 1,
+		timestamp: Date.now(),
+		transactions: this.pendingTransactions,
+		nonce: 0, //fill in once proof of... is established
+		hash: hash,
+		previousBlockHash: previousBlockHash,
+	  };
+  
+	  this.pendingTransactions = [];
+	  this.chain.push(newBlock);
+  
+	  return newBlock;
+	}
+  
+	getLastBlock() {
+	  return this.chain[this.chain.length - 1];
+	}
+  
+	createNewTransaction(amount, sender, receiver) {
+	  const newTransaction = {
+		amount: amount,
+		sender: sender,
+		receiver: receiver,
+	  };
+	  this.pendingTransactions.push(newTransaction);
+  
+	  return this.getLastBlock()['index'] + 1;
+	}
   }
-}
+  
 
-Blockchain.prototype.createNewBlock = (previousBlockHash, hash) => {
-  const newBlock = {
-    index: this.chain.length + 1,
-    timestamp: Date.now(),
-    transactions: this.newTransactions,
-    nonce: 0, //fill in once proof of... is established
-    hash: hash,
-    previousBlockHash: previousBlockHash,
-  };
-
-  this.newTransactions = [];
-  this.chain.push(newBlock);
-
-  return newBlock;
-};
-
-Blockchain.prototype.getLastBlock = () => {
-  return this.chain[this.chain.length - 1];
-};
+  
 
 /* PREVIOUS CODE
 

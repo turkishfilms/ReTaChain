@@ -21,10 +21,14 @@ Blockchain.prototype.createNewBlock = (previousBlockHash, hash) => {
     previousBlockHash: previousBlockHash,
   };
 
-  	this.newTransactions = [];
-	this.chain.push(newBlock);
+  this.newTransactions = [];
+  this.chain.push(newBlock);
 
-	return newBlock;
+  return newBlock;
+};
+
+Blockchain.prototype.getLastBlock = () => {
+  return this.chain[this.chain.length - 1];
 };
 
 /* PREVIOUS CODE

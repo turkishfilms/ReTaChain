@@ -9,7 +9,7 @@ Collaboration.
 A governamen which operates across regions, Like a crowdsourced UBI (Universal Base Income). takes in taxes, distributes value, all transparently, democratically, meritocratically
 
 :::
-LEDGERBOARD = ID -> FUNDS 
+LEDGERBOARD = ID -> BALANCE
 LEDGER = list of all TXS
 BLOCKCHAIN = list of all blocks nonces hashes etc.
 

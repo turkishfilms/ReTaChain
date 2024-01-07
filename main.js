@@ -1,1 +1,7 @@
-console.log("hey")
+const IDS = {
+	"UYWIWUEWWEE": 2,
+	"UHUICSSIXIN": 5,
+	"UIUIOABSAUIXSAI": 10
+}
+
+

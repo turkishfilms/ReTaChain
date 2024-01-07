@@ -1,4 +1,4 @@
-##PERSONAL BLOCKCHAIN
-#Proof mechanisms
+# gPERSONAL BLOCKCHAIN
+## Proof mechanisms
 
-IDEAS:
+# IDEAS:
